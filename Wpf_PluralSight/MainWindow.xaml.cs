@@ -23,6 +23,7 @@ namespace Wpf_PluralSight
         public MainWindow()
         {
             InitializeComponent();
+            btn.Content = "From Code Behind";
         }
     }
 }

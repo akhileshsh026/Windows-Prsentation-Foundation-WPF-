@@ -8,12 +8,10 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
 
-        <StackPanel Orientation="Horizontal">
-
-                <Button Width="100" Height="30" Content="1"></Button>
-                <Button Width="100" Height="30" Content="2"></Button>
-                <Button Width="100" Height="30" Content="3"></Button>
-         
-        </StackPanel>
+      <!-- Namespace allows as to 
+        1)  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" which version of xaml you are using .
+        2)  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" intranstaive nature means the code behind is done due to this as in the following exmaple button as  a Name via X: name = btn you can access that in code behind with the help of this name.
+       -->
+        <Button Height="50" Width="100" x:Name="btn"></Button>        
     </Grid>
 </Window>
