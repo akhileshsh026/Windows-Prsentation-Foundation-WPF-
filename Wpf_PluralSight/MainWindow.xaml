@@ -9,11 +9,11 @@
     <Grid>
 
         <StackPanel Orientation="Horizontal">
-            <StackPanel.Children>
+
                 <Button Width="100" Height="30" Content="1"></Button>
                 <Button Width="100" Height="30" Content="2"></Button>
                 <Button Width="100" Height="30" Content="3"></Button>
-            </StackPanel.Children>
+         
         </StackPanel>
     </Grid>
 </Window>
