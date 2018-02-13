@@ -7,11 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Width="200" Height="130" >
-            <StackPanel Orientation="Vertical">
-                <Image Source="/Items/pic1.png"></Image>
-                <TextBlock Text="HI Akhielsh"></TextBlock>
-            </StackPanel>
-        </Button>
+
+        <StackPanel Orientation="Horizontal">
+            <StackPanel.Children>
+                <Button Width="100" Height="30" Content="1"></Button>
+                <Button Width="100" Height="30" Content="2"></Button>
+                <Button Width="100" Height="30" Content="3"></Button>
+            </StackPanel.Children>
+        </StackPanel>
     </Grid>
 </Window>
