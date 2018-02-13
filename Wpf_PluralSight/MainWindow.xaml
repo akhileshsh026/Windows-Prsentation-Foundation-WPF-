@@ -8,12 +8,10 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Button Width="200" Height="130" >
-            <Button.Content>
-                <StackPanel Orientation="Vertical">
-                    <Image Source="/Items/pic1.png"></Image>
-                    <TextBlock Text="HI Akhielsh"></TextBlock>
-                </StackPanel>
-            </Button.Content>
+            <StackPanel Orientation="Vertical">
+                <Image Source="/Items/pic1.png"></Image>
+                <TextBlock Text="HI Akhielsh"></TextBlock>
+            </StackPanel>
         </Button>
     </Grid>
 </Window>
