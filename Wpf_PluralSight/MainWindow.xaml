@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Wpf_PluralSight"
+        xmlns:Pages="clr-namespace:Wpf_PluralSight.Pages"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
@@ -12,6 +12,7 @@
         1)  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" which version of xaml you are using .
         2)  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" intranstaive nature means the code behind is done due to this as in the following exmaple button as  a Name via X: name = btn you can access that in code behind with the help of this name.
        -->
-        <Button Height="50" Width="100" x:Name="btn"></Button>        
+        <Button Height="50" Width="100" x:Name="btn"></Button>
+        <Pages:UserControl_Test></Pages:UserControl_Test>
     </Grid>
 </Window>
