@@ -7,12 +7,27 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <StackPanel>
+            <Path Stroke="Yellow" StrokeThickness="10" Height="130" VerticalAlignment="Bottom" Data="M5,5 L229,5 229,10.836164 231.03436,10.431256 C249.45451,6.9675016 270.56357,5.0000029 293.00015,5 364.79727,5.0000029 423.00034,25.147189 423.00034,50.000003 423.00034,74.852817 364.79727,95.000003 293.00015,95.000003 270.56357,95.000003 249.45451,93.032504 231.03436,89.568751 L229,89.163844 229,125 5,125 z" Margin="10,0,80.333,10" Stretch="Fill">
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFF07F7F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+        </StackPanel>
+        <Canvas>
+            <Button Height="100" Width="204" Canvas.Left="38" Canvas.Top="160">Hi AKhilesh</Button>
+            <Image Source="/Items/pic2.jpg" Height="250" Width="207" Canvas.Left="247" Canvas.Top="10">
+                <Image.OpacityMask>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#00609419" Offset="1"/>
+                    </LinearGradientBrush>
+                </Image.OpacityMask>
+            </Image>
+        </Canvas>
 
-      <!-- Namespace allows as to 
-        1)  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" which version of xaml you are using .
-        2)  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" intranstaive nature means the code behind is done due to this as in the following exmaple button as  a Name via X: name = btn you can access that in code behind with the help of this name.
-       -->
-        <Button Height="50" Width="100" x:Name="btn"></Button>
-        <Pages:UserControl_Test></Pages:UserControl_Test>
     </Grid>
 </Window>
