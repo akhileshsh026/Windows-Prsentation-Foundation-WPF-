@@ -20,12 +20,9 @@
         <Canvas>
             <Button Height="100" Width="204" Canvas.Left="38" Canvas.Top="160">Hi AKhilesh</Button>
             <Image Source="/Items/pic2.jpg" Height="250" Width="207" Canvas.Left="247" Canvas.Top="10">
-                <Image.OpacityMask>
-                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                        <GradientStop Color="Black" Offset="0"/>
-                        <GradientStop Color="#00609419" Offset="1"/>
-                    </LinearGradientBrush>
-                </Image.OpacityMask>
+                <Image.Clip>
+                    <EllipseGeometry RadiusX="100" RadiusY="20" Center="100,30"></EllipseGeometry>
+                </Image.Clip>
             </Image>
         </Canvas>
 
