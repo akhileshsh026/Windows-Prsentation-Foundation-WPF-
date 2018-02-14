@@ -18,7 +18,7 @@
             </Path>
         </StackPanel>
         <Canvas>
-            <Button Height="100" Width="204" Canvas.Left="38" Canvas.Top="160">Hi AKhilesh</Button>
+            <Button Height="100" Width="204" Canvas.Left="38" Canvas.Top="160" x:Name="btn">Hi AKhilesh</Button>
             <Image Source="/Items/pic2.jpg" Height="250" Width="207" Canvas.Left="247" Canvas.Top="10">
                 <Image.Clip>
                     <EllipseGeometry RadiusX="100" RadiusY="20" Center="100,30"></EllipseGeometry>

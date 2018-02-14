@@ -23,5 +23,22 @@ namespace Wpf_PluralSight.Pages
         {
             InitializeComponent();
         }
+
+        private void Grid_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("U amde it from Grid", "PrewiewMouseDown", MessageBoxButton.OK);
+            
+e.Handled = true;
+        }
+
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("U amde it from Image", "MouseDown", MessageBoxButton.OK);
+        }
+
+        private void win_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("U amde it from Button click event", "Click Event from button", MessageBoxButton.OK);
+        }
     }
 }

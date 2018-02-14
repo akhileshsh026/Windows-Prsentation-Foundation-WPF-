@@ -49,6 +49,6 @@
     </Page.Resources>
 
     <Grid>
-        <Button Height="50" Width="50" Content="Akhil" Background="BurlyWood" Style="{DynamicResource ButtonStyle1}"></Button>
+        <Button Height="50" Width="50" Content="Akhil" Background="BurlyWood" Click="Button_Click" Style="{DynamicResource ButtonStyle1}"></Button>
     </Grid>
 </Page>

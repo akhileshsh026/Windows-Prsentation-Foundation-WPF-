@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:Wpf_PluralSight.Pages"
         mc:Ignorable="d"
         Title="OtherWindow" Height="300" Width="300">
-    <Grid>
-        <Button Height="100" Width="30" Content="1" x:Name="win"></Button>
+    <Grid PreviewMouseDown="Grid_PreviewMouseDown">
+        <Button x:Name="win" Click="win_Click" Margin="54,39,41.333,85.667">
+            <Image Source="/Items/Pic5.jpg" MouseDown="Image_MouseDown"></Image>
+        </Button>
     </Grid>
 </Window>
