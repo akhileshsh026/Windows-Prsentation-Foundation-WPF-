@@ -78,6 +78,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pannels and Layout System\Canvas_Test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\OtherPage.xaml.cs">
@@ -88,6 +92,9 @@
     </Compile>
     <Compile Include="Pages\UserControl_Test.xaml.cs">
       <DependentUpon>UserControl_Test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pannels and Layout System\Canvas_Test.xaml.cs">
+      <DependentUpon>Canvas_Test.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -123,5 +130,6 @@
     <Resource Include="Items\pic4.jpg" />
     <Resource Include="Items\pic3.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
