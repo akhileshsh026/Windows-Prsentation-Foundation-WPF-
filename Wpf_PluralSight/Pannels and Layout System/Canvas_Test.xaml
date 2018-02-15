@@ -9,11 +9,12 @@
       Title="Canvas_Test">
 
     <Grid>
-        <Canvas>
-            <Rectangle Fill="Blue" Height="100" Width="30" Canvas.Left="40" Canvas.Top="40" Panel.ZIndex="1"></Rectangle>
-            <Rectangle Fill="Yellow" Height="100" Width="30" Canvas.Left="80" Canvas.Top="80" Panel.ZIndex="2"></Rectangle>
+        <StackPanel Orientation="Horizontal">
+            <Rectangle Fill="Blue" Height="100" Width="30" Panel.ZIndex="1"></Rectangle>
+            <Rectangle Fill="Yellow" Height="100" Width="30" Panel.ZIndex="2"></Rectangle>
             <Rectangle Fill="Brown" Height="100" Width="30" Panel.ZIndex="3"></Rectangle>
             <Rectangle Fill="Chocolate" Height="120" Width="200"></Rectangle>
-        </Canvas>
+        </StackPanel>
     </Grid>
 </Page>
+
