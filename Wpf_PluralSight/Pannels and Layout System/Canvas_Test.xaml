@@ -8,13 +8,27 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="Canvas_Test">
 
-    <Grid>
-        <StackPanel Orientation="Horizontal">
-            <Rectangle Fill="Blue" Height="100" Width="30" Panel.ZIndex="1"></Rectangle>
-            <Rectangle Fill="Yellow" Height="100" Width="30" Panel.ZIndex="2"></Rectangle>
-            <Rectangle Fill="Brown" Height="100" Width="30" Panel.ZIndex="3"></Rectangle>
-            <Rectangle Fill="Chocolate" Height="120" Width="200"></Rectangle>
-        </StackPanel>
+    <Grid Background="Cornsilk" ShowGridLines="True">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition>
+                
+            </RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="1" Content="Hi Akhilesh"></Button>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90"></ColumnDefinition>
+            <ColumnDefinition>
+              
+            </ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
     </Grid>
 </Page>
 
