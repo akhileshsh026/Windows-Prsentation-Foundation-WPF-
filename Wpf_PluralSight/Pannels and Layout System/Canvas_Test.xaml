@@ -8,27 +8,21 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="Canvas_Test">
 
-    <Grid Background="Cornsilk" ShowGridLines="True">
-        
+    <Grid Background="Cornsilk"  ShowGridLines="True">
+
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition>
-                
-            </RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="200"></RowDefinition>
         </Grid.RowDefinitions>
-
-        <Button Grid.Row="1" Content="Hi Akhilesh"></Button>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="90"></ColumnDefinition>
-            <ColumnDefinition>
-              
-            </ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
         
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Content="HI there" Height="20" Width="60" HorizontalAlignment="Right"
+                VerticalAlignment="Bottom" Margin="60,0,5,38"></Button>
+
+
     </Grid>
 </Page>
 
