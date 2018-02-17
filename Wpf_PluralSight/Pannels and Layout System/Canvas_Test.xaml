@@ -20,7 +20,7 @@
             <ColumnDefinition Width="1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Button Content="HI there" Height="20" Width="60" HorizontalAlignment="Right"
-                VerticalAlignment="Bottom" Margin="60,0,5,38"></Button>
+                VerticalAlignment="Bottom" Padding="3" Margin="60,0,5,38"></Button>
 
 
     </Grid>

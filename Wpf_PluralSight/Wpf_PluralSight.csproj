@@ -130,6 +130,8 @@
     <Resource Include="Items\pic4.jpg" />
     <Resource Include="Items\pic3.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Data_Bindings\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
