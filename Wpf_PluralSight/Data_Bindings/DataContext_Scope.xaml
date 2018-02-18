@@ -7,12 +7,21 @@
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
       Title="DataContext_Scope">
+    <Page.Resources>
+        <local:AgeToVisibilityConverter x:Key="AgeToVisCon">
+            
+        </local:AgeToVisibilityConverter>
+    </Page.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
       
 
@@ -21,36 +30,51 @@
         <TextBox x:Name="txtName"
                  Width="200"
                  Height="20"
-                 HorizontalAlignment="Center"
+                 HorizontalAlignment="Left"
+                 Margin="4,4,0,0"
                  Text="{Binding Name, Mode=TwoWay , UpdateSourceTrigger=Explicit}" 
-                 Margin="58,4,42,76" 
-                 Grid.Row="0" />
+                 
+                 Grid.Row="1" />
 
-        <TextBlock Text="{Binding Name}"  Grid.Row="1" Height="20" Width="200" Background="Aquamarine"/>
-
-        <TextBlock Text="Address :" Margin="4,4,0,0" 
+        <TextBlock Text="Address :" Margin="4,4,0,0" Grid.Row="2"
                        Height="21"/>
 
         <StackPanel Orientation="Horizontal" 
-                    Margin="48,0,0,0"
-                    DataContext="{Binding Address}">
+                    Grid.Row="3"
+                    DataContext="{Binding Address}"
+                    Margin="4,4,0,0">
+
             <TextBox Width="50"  
                      Height="20" 
-                     Margin="10,40"
                      Text="{Binding Number}"/>
-            
-            <TextBox Width="136" 
-                     Margin="10,40,0,40" 
-                     Height="20" 
-                     Text="{Binding Street}"/>
 
+            <TextBox Width="136"                   
+                     Height="20"
+                     Margin="20,0,0,0"
+                     Text="{Binding Street}"/>
 
         </StackPanel>
 
+        <TextBlock Grid.Row="4" Text="Age :" Margin="4,4,0,0"/>
+        
+        <StackPanel 
+            Orientation="Horizontal" 
+            Grid.Row="5"
+            Margin="4,4,0,0">
+
+            <TextBox Width="50" Text="{Binding Age}"/>
+
+            <Image Width="40" 
+                   Height="20" 
+                   Margin="20,0,0,0"
+                   Visibility="{Binding Age ,Converter={StaticResource AgeToVisCon},ConverterParameter=30}"
+                   Source="/Items/pic1.png"/>
+        </StackPanel>
         <Button Content="Show" 
-                VerticalAlignment="Top" 
-                Grid.Row="1"
+                HorizontalAlignment="Left"
+                Grid.Row="6"
                 Width="100"
+                Margin="4,10,0,0"
                 Click="Button_Click"/>
 
     </Grid>

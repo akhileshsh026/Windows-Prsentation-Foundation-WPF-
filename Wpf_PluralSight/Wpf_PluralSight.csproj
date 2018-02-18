@@ -71,6 +71,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Data_Bindings\Address.cs" />
+    <Compile Include="Data_Bindings\AgeToVisibilityConverter.cs" />
     <Compile Include="Data_Bindings\BindableBase.cs" />
     <Compile Include="Data_Bindings\DataContext_Scope.xaml.cs">
       <DependentUpon>DataContext_Scope.xaml</DependentUpon>

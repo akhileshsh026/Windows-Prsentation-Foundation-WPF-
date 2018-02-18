@@ -26,11 +26,34 @@ namespace Wpf_PluralSight.Data_Bindings
 
         }
 
+        private int _age;
+
+        public int Age
+        {
+            get
+            {
+                return _age;
+            }
+
+            set
+            {
+                if(value != _age)
+                {
+                    _age = value;
+                    RaisePropertyChanged("Age");
+                }
+            }
+
+
+        }
+
+
         public Address Address { get; set; }
 
         public Person()
         {
             this.Address = new Address();
+            this.Age = 35;
         }
     }
 }

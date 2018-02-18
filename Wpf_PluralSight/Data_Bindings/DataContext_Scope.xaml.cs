@@ -33,4 +33,4 @@ namespace Wpf_PluralSight.Data_Bindings
             be.UpdateSource();
         }
     }
-}
+} 
