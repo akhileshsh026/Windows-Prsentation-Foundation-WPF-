@@ -6,9 +6,26 @@ using System.Threading.Tasks;
 
 namespace Wpf_PluralSight.Data_Bindings
 {
-   public class Person
+   public class Person : BindableBase
     {
-        public string Name { get; set; }
+        private string _name;
+        public string Name
+        { get
+            {
+                return _name;
+            }
+
+            set
+            {
+                if(value !=  _name)
+                {
+                    _name = value;
+                    RaisePropertyChanged("Name");
+                }
+            }
+
+        }
+
         public Address Address { get; set; }
 
         public Person()

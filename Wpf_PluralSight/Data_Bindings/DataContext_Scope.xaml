@@ -14,9 +14,7 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+      
 
         <TextBlock Text="Name :" Margin="4,4,0,0" Grid.Row="0"></TextBlock>
 
@@ -24,7 +22,7 @@
                  Width="200"
                  Height="20"
                  HorizontalAlignment="Center"
-                 Text="{Binding Name}" 
+                 Text="{Binding Name, Mode=TwoWay}" 
                  Margin="58,4,42,76" 
                  Grid.Row="0" />
 
