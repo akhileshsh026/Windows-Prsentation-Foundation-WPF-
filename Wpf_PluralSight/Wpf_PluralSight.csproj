@@ -54,6 +54,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Data_Bindings\DataContext_Scope.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Data_Bindings\DB_FirstTaste.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -65,6 +69,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data_Bindings\Address.cs" />
+    <Compile Include="Data_Bindings\DataContext_Scope.xaml.cs">
+      <DependentUpon>DataContext_Scope.xaml</DependentUpon>
     </Compile>
     <Compile Include="Data_Bindings\DB_FirstTaste.xaml.cs">
       <DependentUpon>DB_FirstTaste.xaml</DependentUpon>
