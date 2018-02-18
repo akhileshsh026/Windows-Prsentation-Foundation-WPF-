@@ -22,7 +22,7 @@
                  Width="200"
                  Height="20"
                  HorizontalAlignment="Center"
-                 Text="{Binding Name, Mode=TwoWay , UpdateSourceTrigger=PropertyChanged}" 
+                 Text="{Binding Name, Mode=TwoWay , UpdateSourceTrigger=Explicit}" 
                  Margin="58,4,42,76" 
                  Grid.Row="0" />
 

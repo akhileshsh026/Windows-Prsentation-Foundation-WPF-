@@ -29,9 +29,8 @@ namespace Wpf_PluralSight.Data_Bindings
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            person.Name = "Akhilesk";
-            //string Message = person.Name + " " + person.Address.Number + " " + person.Address.Street;
-            //MessageBox.Show(Message);
+            BindingExpression be = txtName.GetBindingExpression(TextBox.TextProperty);
+            be.UpdateSource();
         }
     }
 }
