@@ -31,19 +31,18 @@
         <TextBlock Text="Address :" Margin="4,4,0,0" 
                        Height="21"/>
 
-        <StackPanel Orientation="Horizontal" Margin="48,0,0,0">
-            
-            
-            
+        <StackPanel Orientation="Horizontal" 
+                    Margin="48,0,0,0"
+                    DataContext="{Binding Address}">
             <TextBox Width="50"  
                      Height="20" 
                      Margin="10,40"
-                     Text="{Binding Address.Number}"/>
+                     Text="{Binding Number}"/>
             
             <TextBox Width="136" 
                      Margin="10,40,0,40" 
                      Height="20" 
-                     Text="{Binding Address.Street}"/>
+                     Text="{Binding Street}"/>
 
 
         </StackPanel>
